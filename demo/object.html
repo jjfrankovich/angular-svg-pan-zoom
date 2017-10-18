@@ -14,7 +14,9 @@
 <script>
     // Don't use window.onLoad like this in production, because it can only listen to one function.
     window.onload = function () {
-        svgPanZoom('#demo-tiger', {
+        window.console.log("window.location.href:" + window.location.href);
+        window.console.log("window.top.location.href:" + window.top.location.href);
+		svgPanZoom('#demo-tiger', {
             zoomEnabled: true,
             controlIconsEnabled: true
         });
